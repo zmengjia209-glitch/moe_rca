@@ -1,0 +1,64 @@
+{
+  "cases": [
+    "re1ob_adservice_cpu_1",
+    "re1tt_ts-auth-service_cpu_1",
+    "re2ob_checkoutservice_cpu_2",
+    "re2ss_user_loss_1"
+  ],
+  "checks": {
+    "all_four_fit_after_short_run": true,
+    "all_targets_in_step1_candidates": true,
+    "expert_aux_active": true,
+    "finite_final_loss": true,
+    "finite_initial_loss": true,
+    "loss_decreased": true
+  },
+  "device": "cpu",
+  "final": {
+    "expert": 0.40122464299201965,
+    "expert_terms": 7,
+    "fused": 1.198043355543632e-05,
+    "total": 0.20062430202960968
+  },
+  "history": [
+    {
+      "expert_loss": 2.7759835720062256,
+      "expert_terms": 7,
+      "fused_loss": 3.131424903869629,
+      "grad_norm": 8.186488151550293,
+      "loss": 4.519416809082031,
+      "step": 1
+    },
+    {
+      "expert_loss": 0.41484785079956055,
+      "expert_terms": 7,
+      "fused_loss": 1.3202309673943091e-05,
+      "grad_norm": 0.13690342009067535,
+      "loss": 0.20743712782859802,
+      "step": 30
+    }
+  ],
+  "initial": {
+    "expert": 2.7759835720062256,
+    "expert_terms": 7,
+    "fused": 3.131424903869629,
+    "total": 4.519416809082031
+  },
+  "loss_config": {
+    "expert_weight": 0.5
+  },
+  "pass": true,
+  "roots": [
+    "adservice",
+    "ts-auth-service",
+    "checkoutservice",
+    "user"
+  ],
+  "steps": 30,
+  "target_indices": [
+    1,
+    8,
+    4,
+    13
+  ]
+}

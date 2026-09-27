@@ -1,0 +1,38 @@
+{
+  "batch_size": 2,
+  "candidate_protocol": "metric_schema_audited_canonical",
+  "device": "cpu",
+  "distillation": {
+    "enabled": true,
+    "teacher_checkpoint": "data/audit/step2_native_train_dryrun/model.pt",
+    "teacher_frozen": true,
+    "temperature": 2.0,
+    "weight": 0.5
+  },
+  "epochs": 1,
+  "history": [
+    {
+      "epoch": 1,
+      "train_distill_loss": 0.09511356055736542,
+      "train_distill_terms": 7,
+      "train_loss": 3.875330686569214,
+      "val_cases": 2,
+      "val_loss": 6.6108198165893555,
+      "val_top1": 0.0
+    }
+  ],
+  "loss": {
+    "expert_weight": 0.5
+  },
+  "model_type": "native",
+  "split_counts": {
+    "test": 103,
+    "train": 521,
+    "val": 109
+  },
+  "training_stage": "distillation",
+  "window": {
+    "after_s": 300.0,
+    "before_s": 300.0
+  }
+}

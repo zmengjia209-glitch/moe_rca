@@ -1,0 +1,35 @@
+{
+  "acceptance": {
+    "legal_cases_733": true,
+    "no_pre_gt_failures": true,
+    "raw_cases_735": true,
+    "schema_audited_coverage": true,
+    "schema_raw_coverage": true,
+    "two_rule_based_exclusions": true,
+    "visible_validation_coverage": true
+  },
+  "excluded_cases": 2,
+  "exclusions": [
+    {
+      "case": "re1ob_currencyservice_loss_1",
+      "violations": [
+        "inject_time_outside_metric_range"
+      ]
+    },
+    {
+      "case": "re1ob_productcatalogservice_cpu_3",
+      "violations": [
+        "inject_time_outside_metric_range"
+      ]
+    }
+  ],
+  "legal_cases": 733,
+  "legal_gt_in_schema_audited": 733,
+  "legal_gt_in_schema_raw": 733,
+  "legal_gt_in_visible_validation": 733,
+  "legal_with_logs": 359,
+  "legal_with_traces": 240,
+  "pass": true,
+  "pre_gt_failures": [],
+  "raw_cases": 735
+}

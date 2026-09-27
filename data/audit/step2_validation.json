@@ -1,0 +1,106 @@
+{
+  "available_entity_modalities": {
+    "log": 21,
+    "metric": 107,
+    "trace": 7
+  },
+  "batch_shapes": {
+    "entity_mask": [
+      4,
+      64
+    ],
+    "gate_weights": [
+      4,
+      64,
+      3
+    ],
+    "log_features": [
+      4,
+      64,
+      9
+    ],
+    "metric_channel_features": [
+      4,
+      220,
+      10
+    ],
+    "metric_values": [
+      4,
+      220,
+      601
+    ],
+    "scores": [
+      4,
+      64
+    ],
+    "trace_features": [
+      4,
+      64,
+      11
+    ]
+  },
+  "cases": [
+    {
+      "case": "re1ob_adservice_cpu_1",
+      "entities": 14,
+      "has_logs": false,
+      "has_traces": false,
+      "metric_channels": 49,
+      "system": "OB",
+      "window": [
+        1685202388.0,
+        1685202988.0
+      ]
+    },
+    {
+      "case": "re1tt_ts-auth-service_cpu_1",
+      "entities": 64,
+      "has_logs": false,
+      "has_traces": false,
+      "metric_channels": 220,
+      "system": "TT",
+      "window": [
+        1693187118.0,
+        1693187718.0
+      ]
+    },
+    {
+      "case": "re2ob_checkoutservice_cpu_2",
+      "entities": 14,
+      "has_logs": true,
+      "has_traces": true,
+      "metric_channels": 74,
+      "system": "OB",
+      "window": [
+        1708475061.0,
+        1708475570.0
+      ]
+    },
+    {
+      "case": "re2ss_user_loss_1",
+      "entities": 15,
+      "has_logs": true,
+      "has_traces": false,
+      "metric_channels": 79,
+      "system": "SS",
+      "window": [
+        1705616160.0,
+        1705616760.0
+      ]
+    }
+  ],
+  "checks": {
+    "all_three_modalities_exercised": true,
+    "available_gate_sums_one": true,
+    "padded_scores_neg_inf": true,
+    "scores_finite": true,
+    "unavailable_gate_zero": true
+  },
+  "modalities": [
+    "metric",
+    "log",
+    "trace"
+  ],
+  "model_parameters": 40936,
+  "pass": true
+}

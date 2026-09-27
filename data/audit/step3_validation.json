@@ -1,0 +1,41 @@
+{
+  "cases": [
+    "re2ob_checkoutservice_cpu_2",
+    "re2ss_user_loss_1"
+  ],
+  "checks": {
+    "availability_aware_terms": true,
+    "distillation_becomes_active": true,
+    "finite_loss": true,
+    "missing_trace_respected": true,
+    "teacher_frozen": true
+  },
+  "expected_distill_terms": 5,
+  "modality_presence_per_case": {
+    "re2ob_checkoutservice_cpu_2": {
+      "log": true,
+      "metric": true,
+      "trace": true
+    },
+    "re2ss_user_loss_1": {
+      "log": true,
+      "metric": true,
+      "trace": false
+    }
+  },
+  "pass": true,
+  "roots": [
+    "checkoutservice",
+    "user"
+  ],
+  "step1": {
+    "distill_loss": 0.029622137546539307,
+    "distill_terms": 5,
+    "loss": 3.6929261684417725
+  },
+  "step2": {
+    "distill_loss": 0.21779179573059082,
+    "distill_terms": 5,
+    "loss": 2.614870548248291
+  }
+}

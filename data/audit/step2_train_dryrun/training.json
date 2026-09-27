@@ -1,0 +1,27 @@
+{
+  "batch_size": 2,
+  "candidate_protocol": "metric_schema_audited_canonical",
+  "device": "cpu",
+  "epochs": 1,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 4.458037734031677,
+      "val_cases": 2,
+      "val_loss": 3.278730869293213,
+      "val_top1": 0.5
+    }
+  ],
+  "loss": {
+    "expert_weight": 0.5
+  },
+  "split_counts": {
+    "test": 103,
+    "train": 521,
+    "val": 109
+  },
+  "window": {
+    "after_s": 300.0,
+    "before_s": 300.0
+  }
+}
